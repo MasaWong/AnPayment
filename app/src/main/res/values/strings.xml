@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Payment</string>
+    <string name="payment_failed">支付失败</string>
+    <string name="payment_canceled">支付取消</string>
+    <string name="payment_success">支付成功</string>
+    <string name="payment_need_uppay">需要安装银联安全支付控件</string>
+    <string name="payment_install">安装</string>
+    <string name="payment_cancel">取消</string>
 </resources>
