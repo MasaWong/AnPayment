@@ -31,3 +31,6 @@
 
 -dontwarn  com.unionpay.**
 -keep class com.unionpay.** {*;}
+
+-dontwarn com.pingplusplus.**
+-keep class com.pingplusplus.** {*;}
