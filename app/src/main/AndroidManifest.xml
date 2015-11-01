@@ -23,10 +23,10 @@
             android:exported="false"
             android:screenOrientation="behind" />
         <!-- 微信支付注册 -->
-        <activity-alias
-            android:name=".wxapi.WXPayEntryActivity"
-            android:exported="true"
-            android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+        <!--<activity-alias-->
+            <!--android:name=".wxapi.WXPayEntryActivity"-->
+            <!--android:exported="true"-->
+            <!--android:targetActivity="com.pingplusplus.android.PaymentActivity" />-->
 
     </application>
 
