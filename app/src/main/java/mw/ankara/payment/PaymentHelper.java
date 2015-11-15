@@ -42,7 +42,7 @@ public class PaymentHelper {
      * "fail"    - payment failed
      * "cancel"  - user canceld
      * "invalid" - payment plugin not installed
-     * <p/>
+     * <p>
      * 如果是银联渠道返回 invalid，调用 UPPayAssistEx.installUPPayPlugin(this); 安装银联安全支付控件。
      */
     public static boolean onActivityResult(Activity activity, int requestCode, Intent data) {
@@ -59,20 +59,20 @@ public class PaymentHelper {
             } else if (result.equals("invalid")) {
                 final Context appContext = activity.getApplicationContext();
                 new AlertDialog.Builder(activity)
-                    .setMessage(R.string.payment_need_uppay)
-                    .setPositiveButton(R.string.payment_install, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            UPPayAssistEx.installUPPayPlugin(appContext);
-                        }
-                    })
-                    .setNegativeButton(R.string.payment_cancel, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                        }
-                    })
-                    .show();
+                        .setMessage(R.string.payment_need_uppay)
+                        .setPositiveButton(R.string.payment_install, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                UPPayAssistEx.installUPPayPlugin(appContext);
+                            }
+                        })
+                        .setNegativeButton(R.string.payment_cancel, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        })
+                        .show();
             }
         }
 
